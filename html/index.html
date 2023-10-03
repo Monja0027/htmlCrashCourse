@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Julia Monjardim">
+    <meta name="description" content="This webpage contains all the content i've learned from Codevolution's HTML Crash Course">
+    <title>HTML Crash Course</title>
+  </head>
+  <body>
+<!-- Formatting Text -->
+    <p>The first section covers HTML Heading's and paragraph, the most used elements for text in HTML</p>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 2</h3>
+    <h4>Heading 2</h4>
+    <h5>Heading 2</h5>
+    <h6>Heading 2</h6>
+
+    <p>This is a paragraph</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe blanditiis&nbsp;reprehenderit doloremque. <br /> Culpa deleniti repudiandae non eum ab amet optio aperiam soluta harum eveniet officiis, voluptas dicta, eaque tempora maxime.</p>
+    <hr />
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim voluptatibus asperiores dicta nesciunt magni itaque, quidem, placeat fugiat voluptatum, aliquid&nbsp;quis qui totam architecto. Soluta nesciunt deleniti voluptatum placeat veniam.</p>
+
+    <hr />
+    <hr />
+    <hr />
+
+<!-- INLINE Text Formatting -->
+  <!-- This isn't the best practice! Use CSS for styling!! -->
+  <p>The second section covers inline text formatting. It's not the best practice but here it is:</p>
+    <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur adipisicing <em>elit</em>. Ea, inventore!</p>
+  <!-- the <strong> and <em> tags not only helps with styling but also assists assistive technologies (e.g., screen readers) and search engines in understanding the content. -->
+    <p><small>I'm a small text</small></p>
+    <p><mark>I'm HIGHLIGHTED!</mark></p>
+    <p><del>I'm CROSSED!</del></p>
+    <p><ins>I'm underlined</ins></p>
+    <p><sub>I'm down low.</sub> <sup>And I'm up high!</sup></p>
+
+    <hr />
+    <hr />
+    <hr />
+
+<!-- Div and Span Tags -->
+  <!-- HTML elements can either be block level or inline level. Block level elements always starts in a new line and takes out the full width available. Inline on another hand does not start on a new line and only takes up as much width as necessary -->
+  <!-- BLOCK element: -->
+  <p>The third section shows how block and inline elements work:</p>
+    <div>Block 1</div>
+    <div>Block 2</div>
+
+  <!-- INLINE element: -->
+    <span>Inline 1</span>
+    <span>Inline 2</span>
+
+    <hr />
+    <hr />
+    <hr />
+
+<!-- LISTS -->
+  <!-- Unordered list -->
+  <p>The fourth section covers the different types of lists we have in HTML:</p>
+    <ul>
+        <li>Bread</li>
+        <li>Milk</li>
+        <li>Eggs</li>
+    </ul>
+  <!-- Ordered list -->
+    <ol>
+      <li>Turn left to reach point A</li>
+      <li>Keep going forward and reach point B</li>
+      <li>Turn right ro finally reach point C</li>
+    </ol>
+
+  <!-- Description list -->
+    <dl>
+      <dt>Ice cream</dt>
+      <dd>- A soft sweet frozen food</dd>
+      
+      <dt>Tea</dt>
+      <dd>- A hot drink</dd>
+
+      <dt>Coffee</dt>
+      <dd>- A divine gift from the Lord Almighty</dd>
+    </dl>
+
+    <hr />
+    <hr />
+    <hr />
+
+<!-- HTML Attributes -->
+  <!-- Provides additional info about html elements -->
+  <p>The fifth section covers the use of HTML attributes, like src="", alt="", href="" and target="":</p>
+    <img src="/img.jpg" alt="A hot beautiful cup of coffee" width="180px"/>
+    <a href="https://google.com" target="_blank">Google</a>
+    <a href="contact.html">Contact</a>
+
+    <br />
+
+    <hr />
+    <hr />
+    <hr />
+
+<!-- Table -->
+  <p>The sixth section covers the HTML table:</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Heading 1</th>
+          <th>Heading 2</th>
+          <th>Heading 3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Data 1</td>
+          <td>Data 2</td>
+          <td>Data 3</td>
+        </tr>
+        <tr>
+          <td>Data 4</td>
+          <td>Data 5</td>
+          <td>Data 6</td>
+        </tr>
+        <tr>
+          <td>Data 7</td>
+          <td>Data 8</td>
+          <td>Data 9</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr />
+    <hr />
+    <hr />
+
+<!-- Forms -->
+  <p>The seventh section covers the HTML form:</p>
+    <form action="#">
+      <label for="username">Username</label><br />
+      <input type="text" id="username"><br />
+
+      <label for="about">About You</label><br />
+      <textarea id="about" cols="30" rows="10"></textarea><br />
+
+      <label for="country">Country</label><br />
+      <select id="country">
+        <option value="usa">USA</option>
+        <option value="brazil">Brazil</option>
+        <option value="france">France</option>
+      </select><br />
+
+      <label for="">Job Type</label><br />
+      <input type="radio" name="jobType" value="partTime" id="partTime">
+      <label for="partTime">Part Time</label>
+      <br />
+      <input type="radio" name="jobType" value="fullTime" id="fullTime">
+      <label for="fullTime">Full Time</label>
+
+        <hr />
+
+      <label for="">Job Type</label><br />
+      <input type="checkbox" name="jobTypeCb" value="partTime" id="partTimeCb">
+      <label for="partTimeCb">Part Time</label>
+      <br />
+      <input type="checkbox" name="jobTypeCb" value="fullTime" id="fullTimeCb">
+      <label for="fullTimeCb">Full Time</label>
+      
+        <br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
